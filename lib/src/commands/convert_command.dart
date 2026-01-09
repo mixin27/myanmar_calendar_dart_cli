@@ -98,7 +98,9 @@ class ConvertCommand extends Command<int> {
       ..info(
         '  ${lightYellow.wrap('Myanmar Date:')} ${mdt.formatMyanmar('&y &M &P &ff')}',
       )
-      ..info('  ${lightYellow.wrap('Moon Phase:')}   ${mdt.moonPhase}');
+      ..info(
+        '  ${lightYellow.wrap('Moon Phase:')}   ${mdt.moonPhase} (${mdt.formatMyanmar('&P')})',
+      );
 
     if (mdt.hasHolidays) {
       _logger.info(

@@ -11,8 +11,8 @@ class AiCommand extends Command<int> {
   AiCommand({required Logger logger}) : _logger = logger {
     argParser
       ..addOption(
-        'date',
-        abbr: 'd',
+        'western',
+        abbr: 'w',
         help:
             'The date to generate prompt for (YYYY-MM-DD). Defaults to today.',
       )
@@ -35,7 +35,7 @@ class AiCommand extends Command<int> {
 
   @override
   Future<int> run() async {
-    final dateStr = argResults?['date'] as String?;
+    final dateStr = argResults?['western'] as String?;
     final typeStr = argResults?['type'] as String;
 
     final mdt = _getDateTime(dateStr);

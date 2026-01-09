@@ -10,8 +10,8 @@ class HolidayCommand extends Command<int> {
   /// {@macro holiday_command}
   HolidayCommand({required Logger logger}) : _logger = logger {
     argParser.addOption(
-      'date',
-      abbr: 'd',
+      'western',
+      abbr: 'w',
       help: 'The date to check (YYYY-MM-DD). Defaults to today.',
     );
   }
@@ -26,7 +26,7 @@ class HolidayCommand extends Command<int> {
 
   @override
   Future<int> run() async {
-    final dateStr = argResults?['date'] as String?;
+    final dateStr = argResults?['western'] as String?;
     final mdt = _getDateTime(dateStr);
 
     if (mdt == null) {
@@ -39,7 +39,7 @@ class HolidayCommand extends Command<int> {
       ..info(lightCyan.wrap('🎉 Holiday Information'))
       ..info('----------------------------------------')
       ..info(
-        '  ${lightYellow.wrap('Date:')} ${mdt.formatWestern('%d %M')} ${mdt.westernYear}',
+        '  ${lightYellow.wrap('Date:')} ${mdt.formatWestern('%d %M %yyyy')}',
       )
       ..info('----------------------------------------');
 

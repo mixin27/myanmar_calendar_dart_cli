@@ -10,8 +10,8 @@ class AstroCommand extends Command<int> {
   /// {@macro astro_command}
   AstroCommand({required Logger logger}) : _logger = logger {
     argParser.addOption(
-      'date',
-      abbr: 'd',
+      'western',
+      abbr: 'w',
       help: 'The date to check (YYYY-MM-DD). Defaults to today.',
     );
   }
@@ -26,7 +26,7 @@ class AstroCommand extends Command<int> {
 
   @override
   Future<int> run() async {
-    final dateStr = argResults?['date'] as String?;
+    final dateStr = argResults?['western'] as String?;
     final mdt = _getDateTime(dateStr);
 
     if (mdt == null) {

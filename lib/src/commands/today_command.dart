@@ -32,7 +32,9 @@ class TodayCommand extends Command<int> {
       ..info(
         '  ${lightYellow.wrap('Myanmar Date:')} ${today.formatMyanmar('&y &M &P &ff')}',
       )
-      ..info('  ${lightYellow.wrap('Moon Phase:')}   ${today.moonPhase}');
+      ..info(
+        '  ${lightYellow.wrap('Moon Phase:')}   ${today.moonPhase} (${today.formatMyanmar('&P')})',
+      );
 
     if (today.isSabbath) {
       _logger.info('  ${lightRed.wrap('✨ Today is Sabbath Day!')}');
