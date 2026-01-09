@@ -14,7 +14,7 @@ Myanmar calendar Dart CLI package supporting ai prompt, convert and date informa
 
 ## Getting Started 🚀
 
-If the CLI application is available on [pub](https://pub.dev), activate globally via:
+If the CLI application is available on [pub](https://pub.dev/packages/myanmar_calendar_dart_cli), activate globally via:
 
 ```sh
 dart pub global activate myanmar_calendar_dart_cli
