@@ -1,6 +1,6 @@
 name: myanmar_calendar_dart_cli
 description: Myanmar calendar Dart CLI package supporting ai prompt, convert and date information tools.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/mixin27/myanmar_calendar_dart_cli
 issue_tracker: https://github.com/mixin27/myanmar_calendar_dart_cli/issues
 
@@ -26,3 +26,16 @@ dev_dependencies:
 
 executables:
   mycal:
+
+topics:
+  - dart-cli
+  - myanmar-calendar-cli
+  - myanmar-calendar-tools
+  - utility
+  - date-converter
+
+screenshots:
+  - description: Today command demo.
+    path: screenshots/today.png
+  - description: Simple calendar command demo.
+    path: screenshots/calendar.png

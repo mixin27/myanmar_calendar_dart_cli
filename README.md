@@ -2,6 +2,16 @@ Myanmar calendar Dart CLI package supporting ai prompt, convert and date informa
 
 [![License: MIT][license_badge]][license_link]
 
+<div align="center">
+
+| Today Command | Calendar Command |
+|---------------|------------------|
+| ![Today command](screenshots/today.png) | ![Calendar command](screenshots/calendar.png) |
+
+</div>
+
+---
+
 ## Getting Started 🚀
 
 If the CLI application is available on [pub](https://pub.dev), activate globally via:
