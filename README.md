@@ -1,5 +1,4 @@
 Myanmar calendar Dart CLI package supporting ai prompt, convert and date information tools.
-version: 0.0.1
 
 [![License: MIT][license_badge]][license_link]
 
