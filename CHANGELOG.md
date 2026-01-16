@@ -1,3 +1,7 @@
+## 0.0.2
+
+- bumps: `myanmar_calendar_dart` to `^1.1.3`
+
 ## 0.0.1
 
 ### Added
